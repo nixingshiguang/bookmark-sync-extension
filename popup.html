@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>书签同步器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>书签同步器</h1>
+    </header>
+    
+    <div class="config-section">
+      <label for="apiUrl">API URL:</label>
+      <input type="url" id="apiUrl" placeholder="https://api.example.com/bookmarks" />
+      
+      <label for="apiPassword">密码 (可选):</label>
+      <input type="password" id="apiPassword" placeholder="API认证密码" />
+    </div>
+    
+    <div class="bookmarks-section">
+      <h3>选择书签</h3>
+      <div class="bookmarks-tree" id="bookmarksTree">
+        <div class="loading">正在加载书签...</div>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button id="sendBtn" class="send-btn" disabled>
+        <span class="btn-text">发送数据</span>
+        <div class="loading-spinner" style="display: none;"></div>
+      </button>
+    </div>
+    
+    <div class="toast" id="toast"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
