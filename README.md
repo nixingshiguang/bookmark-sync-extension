@@ -4,6 +4,10 @@
 
 ![书签同步器](icons/icon.png)
 
+## 服务器端实现
+
+请移步至[bookmark-sync](https://github.com/nixingshiguang/bookmark-sync/tree/main)项目
+
 ## 功能特点
 
 - 🔄 **书签同步**：将选定的书签同步到自定义API端点
@@ -75,10 +79,6 @@
   "source": "manual_sync或auto_sync"
 }
 ```
-
-## 服务器端实现
-
-请移步至[bookmark-sync](https://github.com/nixingshiguang/bookmark-sync/tree/main)项目
 
 ## 隐私说明
 
